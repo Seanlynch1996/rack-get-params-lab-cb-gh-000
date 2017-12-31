@@ -29,7 +29,7 @@ class Application
         @@cart < search_term
         resp.write("added #{req}")
       else
-        resp.write "Error\n"
+        resp.write "We don't have that item\n"
       end
     else
       resp.write "Path Not Found"
