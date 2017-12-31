@@ -30,7 +30,7 @@ class Application
         resp.write("added #{req}")
       else
         resp.write "#{req}\n"
-        resp.write "We don't have that item\n"
+        resp.write " don't have that item\n"
       end
     else
       resp.write "Path Not Found"
