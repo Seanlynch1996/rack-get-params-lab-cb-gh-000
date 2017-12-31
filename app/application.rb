@@ -23,6 +23,13 @@ class Application
           resp.write "#{it}\n"
         end
       end
+    elsif req.path.match(/add/)
+      search_term = req.params["q"]
+      if @@items.include?(search_term)
+        @@cart < search_term
+      else
+        resp.write "Error\n"
+      end
     else
       resp.write "Path Not Found"
     end
