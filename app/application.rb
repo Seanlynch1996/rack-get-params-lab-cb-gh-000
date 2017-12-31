@@ -29,7 +29,7 @@ class Application
         @@cart < search_term
         resp.write("added #{req}")
       else
-        resp.write "#{req}\n"
+        resp.write "#{env}\n"
         resp.write " don't have that item\n"
       end
     else
